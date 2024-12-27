@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.image-portada {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 2; /* Mantiene la proporción 3:2 */
+  object-fit: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+}
+
+.name-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filters button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .image-portada {
+    max-width: 90%; /* Se ajusta al 90% del ancho del contenedor */
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .filters button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .project-list {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-portada {
+    max-width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .name-badge {
+    font-size: 0.85rem;
+  }
+
+  .filters button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .project {
+    padding: 0.8rem;
+  }
+
+  .project h3 {
+    font-size: 1.1rem;
+  }
+
+  .project p {
+    font-size: 0.85rem;
+  }
+}
